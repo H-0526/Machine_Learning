@@ -6,6 +6,7 @@ Welcome to the **Machine Learning Project Repository**! This project is designed
 **1、数据集：Wine Quality Data Set**
 这个数据集包含了不同葡萄酒的质量评分和其他物理化学性质，如固定酸度、挥发性酸度、柠檬酸等。总共有12个特征，质量评分作为目标变量，可以被视为一个多分类任务。红葡萄酒数据集有1599个样本，白葡萄酒数据集有4898个样本。
 链接：[Wine Quality - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/186/wine+quality)
+
 **2、设计目标**
 1)	对数据集进行深入理解和介绍。
 2)	进行数据探索，如进行属性间的相关性分析，如有缺失、离群点之类的，进行相应处理。
@@ -18,6 +19,7 @@ Welcome to the **Machine Learning Project Repository**! This project is designed
 **1、数据集：Concrete Compressive Strength Data Set**
 描述: 该数据集包含水泥强度与组成材料之间的关系。它有8个特征（包括水泥、炉渣、飞灰、水、超细粉、粗骨料、细骨料和龄期）和一个目标变量（混凝土抗压强度）。样本量: 1030
 链接: [Concrete Compressive Strength - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength)
+
 **2、设计目标**
 1)	对数据集进行深入理解和介绍。
 2)	进行数据探索，如进行属性间的相关性分析，如有缺失、离群点之类的，进行相应处理。
