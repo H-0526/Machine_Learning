@@ -2,6 +2,8 @@
 
 Welcome to the **Machine Learning Project Repository**! This project is designed around the coursework requirements, focusing on solving **classification** and **regression** problems. By integrating classical and modern machine learning techniques with in-depth exploratory data analysis (EDA) and visualization, we aim to comprehensively implement machine learning tasks. From data analysis and feature engineering to model implementation and evaluation, we employ various algorithms such as logistic regression, support vector machines, and gradient boosting trees to process real-world datasets. Additionally, we explore clustering and dimensionality reduction techniques to analyze the differences between unsupervised and supervised learning outcomes. Through this project, you will experience the complete workflow from data to models, enhancing your understanding and practical skills in machine learning. Let’s delve into the fascinating world of machine learning and unlock the unlimited potential hidden in data!
 
+![机器学习作业工作流程图 drawio](https://github.com/user-attachments/assets/023090b6-0e18-4dd0-bcbc-9b85a8b9af67)
+
 ## 分类
 **1、数据集：Wine Quality Data Set**
 这个数据集包含了不同葡萄酒的质量评分和其他物理化学性质，如固定酸度、挥发性酸度、柠檬酸等。总共有12个特征，质量评分作为目标变量，可以被视为一个多分类任务。红葡萄酒数据集有1599个样本，白葡萄酒数据集有4898个样本。
