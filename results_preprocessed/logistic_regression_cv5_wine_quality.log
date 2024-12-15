@@ -1,0 +1,64 @@
+2024-12-15 03:46:59,394 - INFO - Starting training for model: logistic_regression
+2024-12-15 03:46:59,436 - INFO - Cross-validation scores: [0.40549273 0.40226171 0.38673139 0.39482201 0.38349515]
+2024-12-15 03:46:59,436 - INFO - Mean CV accuracy: 0.3946
+2024-12-15 03:46:59,443 - INFO - Negative Log-Loss: 1.1959
+2024-12-15 03:46:59,446 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       0.11      0.72      0.18        40
+          -1       0.52      0.43      0.47       395
+           0       0.65      0.27      0.38       634
+           1       0.39      0.70      0.50       257
+
+    accuracy                           0.41      1326
+   macro avg       0.41      0.53      0.38      1326
+weighted avg       0.54      0.41      0.42      1326
+
+2024-12-15 03:46:59,448 - INFO - Test Accuracy: 0.4133
+2024-12-15 03:46:59,449 - INFO - Class distribution:
+quality
+ 0    2095
+-1    1329
+ 1     875
+-2     119
+Name: count, dtype: int64
+2024-12-15 05:25:55,624 - INFO - Starting training for model: logistic_regression
+2024-12-15 05:25:55,669 - INFO - Cross-validation scores: [0.40549273 0.40226171 0.38673139 0.39482201 0.38349515]
+2024-12-15 05:25:55,669 - INFO - Mean CV accuracy: 0.3946
+2024-12-15 05:25:55,676 - INFO - Negative Log-Loss: 1.1959
+2024-12-15 05:25:55,680 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.11      0.72      0.18        40
+           5       0.52      0.43      0.47       395
+           6       0.65      0.27      0.38       634
+           7       0.39      0.70      0.50       257
+
+    accuracy                           0.41      1326
+   macro avg       0.41      0.53      0.38      1326
+weighted avg       0.54      0.41      0.42      1326
+
+2024-12-15 05:25:55,680 - INFO - Test Accuracy: 0.4133
+2024-12-15 05:30:05,188 - INFO - Starting training for model: logistic_regression
+2024-12-15 05:30:05,228 - INFO - Cross-validation scores: [0.40549273 0.40226171 0.38673139 0.39482201 0.38349515]
+2024-12-15 05:30:05,228 - INFO - Mean CV accuracy: 0.3946
+2024-12-15 05:30:05,236 - INFO - Negative Log-Loss: 1.1959
+2024-12-15 05:30:05,239 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.11      0.72      0.18        40
+           5       0.52      0.43      0.47       395
+           6       0.65      0.27      0.38       634
+           7       0.39      0.70      0.50       257
+
+    accuracy                           0.41      1326
+   macro avg       0.41      0.53      0.38      1326
+weighted avg       0.54      0.41      0.42      1326
+
+2024-12-15 05:30:05,239 - INFO - Test Accuracy: 0.4133
+2024-12-15 05:30:05,242 - INFO - Class distribution:
+6    2095
+5    1329
+7     875
+4     119
+Name: count, dtype: int64

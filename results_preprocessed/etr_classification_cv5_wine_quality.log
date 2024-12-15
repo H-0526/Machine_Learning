@@ -1,0 +1,107 @@
+2024-12-15 03:36:54,948 - INFO - Starting training for etr model with classification task.
+2024-12-15 03:36:54,948 - INFO - Using 5-fold cross-validation.
+2024-12-15 03:36:54,948 - INFO - Model Hyperparameters:
+2024-12-15 03:36:54,948 - INFO -   task: classification
+2024-12-15 03:36:54,948 - INFO -   extra_trees_params: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 03:36:55,819 - INFO - Cross-validation scores: [0.63812601 0.66558966 0.65210356 0.64239482 0.66019417]
+2024-12-15 03:36:55,819 - INFO - Mean CV score: 0.6517
+2024-12-15 03:36:56,074 - INFO - Negative Log-Loss: 0.7935
+2024-12-15 03:36:56,074 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       0.75      0.15      0.25        40
+          -1       0.71      0.68      0.69       395
+           0       0.67      0.78      0.72       634
+           1       0.72      0.56      0.63       257
+
+    accuracy                           0.69      1326
+   macro avg       0.71      0.54      0.57      1326
+weighted avg       0.69      0.69      0.68      1326
+
+2024-12-15 03:36:56,074 - INFO - Test Accuracy: 0.6870
+2024-12-15 05:22:21,212 - INFO - Starting training for etr model with classification task.
+2024-12-15 05:22:21,212 - INFO - Using 5-fold cross-validation.
+2024-12-15 05:22:21,213 - INFO - Model Hyperparameters:
+2024-12-15 05:22:21,213 - INFO -   task: classification
+2024-12-15 05:22:21,213 - INFO -   extra_trees_params: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 05:22:22,073 - INFO - Cross-validation scores: [0.63812601 0.66558966 0.65210356 0.64239482 0.66019417]
+2024-12-15 05:22:22,074 - INFO - Mean CV score: 0.6517
+2024-12-15 05:22:22,324 - INFO - Negative Log-Loss: 0.7935
+2024-12-15 05:22:22,324 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.75      0.15      0.25        40
+           5       0.71      0.68      0.69       395
+           6       0.67      0.78      0.72       634
+           7       0.72      0.56      0.63       257
+
+    accuracy                           0.69      1326
+   macro avg       0.71      0.54      0.57      1326
+weighted avg       0.69      0.69      0.68      1326
+
+2024-12-15 05:22:22,324 - INFO - Test Accuracy: 0.6870
+2024-12-15 06:12:40,074 - INFO - Starting training for etr model with classification task.
+2024-12-15 06:12:40,075 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:12:40,075 - INFO - Model Hyperparameters:
+2024-12-15 06:12:40,075 - INFO -   task: classification
+2024-12-15 06:12:40,075 - INFO -   extra_trees_params: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:12:40,078 - INFO - Applied SMOTE with sampling_strategy={4: 1000}. Resampled class distribution: [   0    0    0    0 1000  934 1461  618]
+2024-12-15 06:12:41,124 - INFO - Cross-validation scores: [0.69987547 0.75217933 0.70734745 0.75436409 0.72194514]
+2024-12-15 06:12:41,124 - INFO - Mean CV score: 0.7271
+2024-12-15 06:12:41,421 - INFO - Negative Log-Loss: 0.7752
+2024-12-15 06:12:41,421 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.31      0.35      0.33        40
+           5       0.76      0.65      0.70       395
+           6       0.67      0.79      0.72       634
+           7       0.70      0.54      0.61       257
+
+    accuracy                           0.69      1326
+   macro avg       0.61      0.58      0.59      1326
+weighted avg       0.69      0.69      0.68      1326
+
+2024-12-15 06:12:41,421 - INFO - Test Accuracy: 0.6863
+2024-12-15 06:15:06,488 - INFO - Starting training for etr model with classification task.
+2024-12-15 06:15:06,488 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:15:06,488 - INFO - Model Hyperparameters:
+2024-12-15 06:15:06,488 - INFO -   task: classification
+2024-12-15 06:15:06,488 - INFO -   extra_trees_params: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:15:06,495 - INFO - Applied SMOTE with sampling_strategy={4: 1500, 7: 1500}. Resampled class distribution: [   0    0    0    0 1500  934 1461 1500]
+2024-12-15 06:15:07,728 - INFO - Cross-validation scores: [0.81186284 0.82391103 0.78683967 0.79147359 0.80166821]
+2024-12-15 06:15:07,728 - INFO - Mean CV score: 0.8032
+2024-12-15 06:15:08,068 - INFO - Negative Log-Loss: 0.7698
+2024-12-15 06:15:08,068 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.28      0.38      0.32        40
+           5       0.73      0.66      0.69       395
+           6       0.70      0.68      0.69       634
+           7       0.60      0.71      0.65       257
+
+    accuracy                           0.67      1326
+   macro avg       0.58      0.61      0.59      1326
+weighted avg       0.68      0.67      0.67      1326
+
+2024-12-15 06:15:08,069 - INFO - Test Accuracy: 0.6704
+2024-12-15 06:19:09,270 - INFO - Starting training for etr model with classification task.
+2024-12-15 06:19:09,270 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:19:09,270 - INFO - Model Hyperparameters:
+2024-12-15 06:19:09,270 - INFO -   task: classification
+2024-12-15 06:19:09,270 - INFO -   extra_trees_params: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:19:10,127 - INFO - Cross-validation scores: [0.63812601 0.66558966 0.65210356 0.64239482 0.66019417]
+2024-12-15 06:19:10,127 - INFO - Mean CV score: 0.6517
+2024-12-15 06:19:10,374 - INFO - Negative Log-Loss: 0.7935
+2024-12-15 06:19:10,374 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.75      0.15      0.25        40
+           5       0.71      0.68      0.69       395
+           6       0.67      0.78      0.72       634
+           7       0.72      0.56      0.63       257
+
+    accuracy                           0.69      1326
+   macro avg       0.71      0.54      0.57      1326
+weighted avg       0.69      0.69      0.68      1326
+
+2024-12-15 06:19:10,374 - INFO - Test Accuracy: 0.6870

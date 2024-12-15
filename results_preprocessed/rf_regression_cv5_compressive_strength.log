@@ -1,0 +1,17 @@
+2024-12-15 02:50:58,287 - INFO - Training rf model for regression task with 5-fold cross-validation.
+2024-12-15 02:50:58,287 - INFO - Model Hyperparameters:
+2024-12-15 02:50:58,287 - INFO -   task: regression
+2024-12-15 02:50:58,287 - INFO -   rf_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 02:50:58,287 - INFO - Using manual cross-validation...
+2024-12-15 02:50:58,438 - INFO - Fold 1: MSE = 0.1097
+2024-12-15 02:50:58,585 - INFO - Fold 2: MSE = 0.1526
+2024-12-15 02:50:58,734 - INFO - Fold 3: MSE = 0.0747
+2024-12-15 02:50:58,881 - INFO - Fold 4: MSE = 0.1021
+2024-12-15 02:50:59,030 - INFO - Fold 5: MSE = 0.1083
+2024-12-15 02:50:59,030 - INFO - Cross-validation scores: [0.10967394592313096, 0.15264524866225135, 0.07465129938737575, 0.10207149746670435, 0.10825112266379497]
+2024-12-15 02:50:59,031 - INFO - Mean CV score: 0.1095
+2024-12-15 02:50:59,031 - INFO - Fitting the model on the entire training set...
+2024-12-15 02:50:59,209 - INFO - Mean Squared Error: 0.1064
+2024-12-15 02:50:59,209 - INFO - Root Mean Squared Error (RMSE): 0.3262
+2024-12-15 02:50:59,209 - INFO - Mean Absolute Error (MAE): 0.2323
+2024-12-15 02:50:59,209 - INFO - R-squared (R^2): 0.9053

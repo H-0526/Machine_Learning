@@ -1,0 +1,18 @@
+2024-12-07 14:59:31,717 - INFO - Training deep_rf model for regression task with 5-fold cross-validation.
+2024-12-07 14:59:31,718 - INFO - Model Hyperparameters:
+2024-12-07 14:59:31,718 - INFO -   task: regression
+2024-12-07 14:59:31,718 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-07 14:59:31,718 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-07 14:59:31,718 - INFO - Using manual cross-validation...
+2024-12-07 14:59:32,580 - INFO - Fold 1: MSE = 334.6882
+2024-12-07 14:59:32,869 - INFO - Fold 2: MSE = 428.9412
+2024-12-07 14:59:33,152 - INFO - Fold 3: MSE = 272.0353
+2024-12-07 14:59:33,442 - INFO - Fold 4: MSE = 361.0608
+2024-12-07 14:59:33,735 - INFO - Fold 5: MSE = 330.9687
+2024-12-07 14:59:33,735 - INFO - Cross-validation scores: [334.6882080843884, 428.94123718529926, 272.03525677011015, 361.0607736790017, 330.9687093771083]
+2024-12-07 14:59:33,735 - INFO - Mean CV score: 345.5388
+2024-12-07 14:59:33,735 - INFO - Fitting the model on the entire training set...
+2024-12-07 14:59:34,071 - INFO - Mean Squared Error: 326.0955
+2024-12-07 14:59:34,071 - INFO - Root Mean Squared Error (RMSE): 18.0581
+2024-12-07 14:59:34,071 - INFO - Mean Absolute Error (MAE): 14.1888
+2024-12-07 14:59:34,071 - INFO - R-squared (R^2): -0.2052

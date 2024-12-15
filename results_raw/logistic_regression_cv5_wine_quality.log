@@ -1,0 +1,30 @@
+2024-12-06 23:32:25,043 - INFO - Starting training for model: logistic_regression
+2024-12-06 23:32:25,207 - INFO - Cross-validation scores: [0.31648352 0.30659341 0.30363036 0.28822882 0.29592959]
+2024-12-06 23:32:25,207 - INFO - Mean CV accuracy: 0.3022
+2024-12-06 23:32:25,250 - INFO - Negative Log-Loss: 1.6107
+2024-12-06 23:32:25,254 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           3       0.01      0.22      0.02         9
+           4       0.10      0.39      0.15        69
+           5       0.53      0.37      0.44       613
+           6       0.64      0.22      0.33       894
+           7       0.31      0.29      0.30       315
+           8       0.08      0.55      0.14        49
+           9       0.02      1.00      0.05         1
+
+    accuracy                           0.30      1950
+   macro avg       0.24      0.44      0.20      1950
+weighted avg       0.52      0.30      0.35      1950
+
+2024-12-06 23:32:25,255 - INFO - Test Accuracy: 0.2954
+2024-12-06 23:32:25,255 - INFO - Class distribution:
+quality
+6    2836
+5    2138
+7    1079
+4     216
+8     193
+3      30
+9       5
+Name: count, dtype: int64

@@ -1,0 +1,24 @@
+2024-12-07 00:18:53,016 - INFO - Starting training for svm model with classification task.
+2024-12-07 00:18:53,017 - INFO - Using 5-fold cross-validation.
+2024-12-07 00:18:53,017 - INFO - Model Hyperparameters:
+2024-12-07 00:18:53,017 - INFO -   task: classification
+2024-12-07 00:18:53,017 - INFO -   svm_params: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': -1, 'probability': True, 'random_state': 42, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+2024-12-07 00:19:00,562 - INFO - Cross-validation scores: [0.56153846 0.55714286 0.56875688 0.56325633 0.54235424]
+2024-12-07 00:19:00,563 - INFO - Mean CV score: 0.5586
+2024-12-07 00:19:03,721 - INFO - Negative Log-Loss: 1.0359
+2024-12-07 00:19:03,721 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           3       1.00      0.00      0.00         9
+           4       1.00      0.00      0.00        69
+           5       0.59      0.65      0.62       613
+           6       0.55      0.72      0.62       894
+           7       0.55      0.18      0.27       315
+           8       1.00      0.00      0.00        49
+           9       1.00      0.00      0.00         1
+
+    accuracy                           0.56      1950
+   macro avg       0.81      0.22      0.22      1950
+weighted avg       0.59      0.56      0.52      1950
+
+2024-12-07 00:19:03,721 - INFO - Test Accuracy: 0.5615

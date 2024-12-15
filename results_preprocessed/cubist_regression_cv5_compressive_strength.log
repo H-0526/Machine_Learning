@@ -1,0 +1,8 @@
+2024-12-15 03:12:05,421 - INFO - Training cubist model with 5-fold cross-validation.
+2024-12-15 03:12:05,421 - WARNING - Model does not provide hyperparameters.
+2024-12-15 03:12:06,364 - INFO - Cross-validation scores: [0.11943275 0.15446564 0.10158921 0.11163542 0.11174674]
+2024-12-15 03:12:06,364 - INFO - Mean CV score (MSE): 0.1198
+2024-12-15 03:12:06,520 - INFO - Mean Squared Error: 0.1305
+2024-12-15 03:12:06,520 - INFO - Root Mean Squared Error (RMSE): 0.3612
+2024-12-15 03:12:06,520 - INFO - Mean Absolute Error (MAE): 0.2687
+2024-12-15 03:12:06,520 - INFO - R-squared (R^2): 0.8839

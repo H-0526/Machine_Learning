@@ -1,0 +1,42 @@
+2024-12-15 03:38:23,221 - INFO - Starting training for svm model with classification task.
+2024-12-15 03:38:23,221 - INFO - Using 5-fold cross-validation.
+2024-12-15 03:38:23,221 - INFO - Model Hyperparameters:
+2024-12-15 03:38:23,221 - INFO -   task: classification
+2024-12-15 03:38:23,221 - INFO -   svm_params: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': -1, 'probability': True, 'random_state': 42, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+2024-12-15 03:38:26,337 - INFO - Cross-validation scores: [0.55573506 0.55088853 0.58576052 0.56796117 0.56796117]
+2024-12-15 03:38:26,337 - INFO - Mean CV score: 0.5657
+2024-12-15 03:38:27,650 - INFO - Negative Log-Loss: 0.9268
+2024-12-15 03:38:27,650 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       1.00      0.00      0.00        40
+          -1       0.62      0.56      0.59       395
+           0       0.57      0.78      0.66       634
+           1       0.65      0.24      0.35       257
+
+    accuracy                           0.59      1326
+   macro avg       0.71      0.39      0.40      1326
+weighted avg       0.61      0.59      0.56      1326
+
+2024-12-15 03:38:27,650 - INFO - Test Accuracy: 0.5860
+2024-12-15 05:24:27,078 - INFO - Starting training for svm model with classification task.
+2024-12-15 05:24:27,079 - INFO - Using 5-fold cross-validation.
+2024-12-15 05:24:27,079 - INFO - Model Hyperparameters:
+2024-12-15 05:24:27,079 - INFO -   task: classification
+2024-12-15 05:24:27,079 - INFO -   svm_params: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': -1, 'probability': True, 'random_state': 42, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+2024-12-15 05:24:30,178 - INFO - Cross-validation scores: [0.55573506 0.55088853 0.58576052 0.56796117 0.56796117]
+2024-12-15 05:24:30,179 - INFO - Mean CV score: 0.5657
+2024-12-15 05:24:31,486 - INFO - Negative Log-Loss: 0.9268
+2024-12-15 05:24:31,486 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       1.00      0.00      0.00        40
+           5       0.62      0.56      0.59       395
+           6       0.57      0.78      0.66       634
+           7       0.65      0.24      0.35       257
+
+    accuracy                           0.59      1326
+   macro avg       0.71      0.39      0.40      1326
+weighted avg       0.61      0.59      0.56      1326
+
+2024-12-15 05:24:31,486 - INFO - Test Accuracy: 0.5860

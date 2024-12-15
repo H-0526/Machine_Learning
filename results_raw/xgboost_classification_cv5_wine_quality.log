@@ -1,0 +1,24 @@
+2024-12-07 00:31:16,171 - INFO - Starting training for xgboost model with classification task.
+2024-12-07 00:31:16,171 - INFO - Using 5-fold cross-validation.
+2024-12-07 00:31:16,172 - INFO - Model Hyperparameters:
+2024-12-07 00:31:16,172 - INFO -   task: classification
+2024-12-07 00:31:16,172 - INFO -   xgb_params: {'objective': 'multi:softprob', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.8, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.1, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 100, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.8, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+2024-12-07 00:31:17,395 - INFO - Cross-validation scores: [0.61428571 0.62417582 0.64356436 0.63916392 0.62926293]
+2024-12-07 00:31:17,395 - INFO - Mean CV score: 0.6301
+2024-12-07 00:31:17,630 - INFO - Negative Log-Loss: 0.8871
+2024-12-07 00:31:17,630 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         9
+           4       0.40      0.09      0.14        69
+           5       0.64      0.70      0.67       613
+           6       0.64      0.72      0.68       894
+           7       0.65      0.50      0.57       315
+           8       0.79      0.31      0.44        49
+           9       1.00      0.00      0.00         1
+
+    accuracy                           0.64      1950
+   macro avg       0.59      0.33      0.36      1950
+weighted avg       0.64      0.64      0.63      1950
+
+2024-12-07 00:31:17,630 - INFO - Test Accuracy: 0.6431

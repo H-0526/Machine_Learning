@@ -1,0 +1,42 @@
+2024-12-15 03:38:09,991 - INFO - Starting training for rf model with classification task.
+2024-12-15 03:38:09,991 - INFO - Using 5-fold cross-validation.
+2024-12-15 03:38:09,991 - INFO - Model Hyperparameters:
+2024-12-15 03:38:09,991 - INFO -   task: classification
+2024-12-15 03:38:09,991 - INFO -   rf_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 03:38:11,264 - INFO - Cross-validation scores: [0.61227787 0.6542811  0.6407767  0.62459547 0.63754045]
+2024-12-15 03:38:11,264 - INFO - Mean CV score: 0.6339
+2024-12-15 03:38:11,601 - INFO - Negative Log-Loss: 0.7925
+2024-12-15 03:38:11,601 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       0.86      0.15      0.26        40
+          -1       0.70      0.68      0.69       395
+           0       0.66      0.76      0.71       634
+           1       0.68      0.56      0.62       257
+
+    accuracy                           0.68      1326
+   macro avg       0.73      0.54      0.57      1326
+weighted avg       0.68      0.68      0.67      1326
+
+2024-12-15 03:38:11,601 - INFO - Test Accuracy: 0.6787
+2024-12-15 05:24:06,558 - INFO - Starting training for rf model with classification task.
+2024-12-15 05:24:06,559 - INFO - Using 5-fold cross-validation.
+2024-12-15 05:24:06,559 - INFO - Model Hyperparameters:
+2024-12-15 05:24:06,559 - INFO -   task: classification
+2024-12-15 05:24:06,559 - INFO -   rf_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 05:24:07,835 - INFO - Cross-validation scores: [0.61227787 0.6542811  0.6407767  0.62459547 0.63754045]
+2024-12-15 05:24:07,835 - INFO - Mean CV score: 0.6339
+2024-12-15 05:24:08,171 - INFO - Negative Log-Loss: 0.7925
+2024-12-15 05:24:08,171 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.86      0.15      0.26        40
+           5       0.70      0.68      0.69       395
+           6       0.66      0.76      0.71       634
+           7       0.68      0.56      0.62       257
+
+    accuracy                           0.68      1326
+   macro avg       0.73      0.54      0.57      1326
+weighted avg       0.68      0.68      0.67      1326
+
+2024-12-15 05:24:08,171 - INFO - Test Accuracy: 0.6787

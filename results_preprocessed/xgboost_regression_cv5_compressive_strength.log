@@ -1,0 +1,17 @@
+2024-12-15 02:51:22,387 - INFO - Training xgboost model for regression task with 5-fold cross-validation.
+2024-12-15 02:51:22,388 - INFO - Model Hyperparameters:
+2024-12-15 02:51:22,388 - INFO -   task: regression
+2024-12-15 02:51:22,388 - INFO -   xgb_params: {'objective': 'reg:squarederror', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.8, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.1, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 100, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.8, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+2024-12-15 02:51:22,388 - INFO - Using manual cross-validation...
+2024-12-15 02:51:23,000 - INFO - Fold 1: MSE = 0.0778
+2024-12-15 02:51:23,031 - INFO - Fold 2: MSE = 0.0972
+2024-12-15 02:51:23,062 - INFO - Fold 3: MSE = 0.0535
+2024-12-15 02:51:23,095 - INFO - Fold 4: MSE = 0.0797
+2024-12-15 02:51:23,125 - INFO - Fold 5: MSE = 0.0841
+2024-12-15 02:51:23,125 - INFO - Cross-validation scores: [0.07779373933853394, 0.09716101261723079, 0.05347339265819036, 0.07965761205428588, 0.08410208267803365]
+2024-12-15 02:51:23,125 - INFO - Mean CV score: 0.0784
+2024-12-15 02:51:23,125 - INFO - Fitting the model on the entire training set...
+2024-12-15 02:51:23,160 - INFO - Mean Squared Error: 0.0903
+2024-12-15 02:51:23,160 - INFO - Root Mean Squared Error (RMSE): 0.3006
+2024-12-15 02:51:23,160 - INFO - Mean Absolute Error (MAE): 0.2000
+2024-12-15 02:51:23,160 - INFO - R-squared (R^2): 0.9196

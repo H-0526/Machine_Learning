@@ -1,0 +1,42 @@
+2024-12-15 03:38:44,270 - INFO - Starting training for xgboost model with classification task.
+2024-12-15 03:38:44,271 - INFO - Using 5-fold cross-validation.
+2024-12-15 03:38:44,271 - INFO - Model Hyperparameters:
+2024-12-15 03:38:44,271 - INFO -   task: classification
+2024-12-15 03:38:44,271 - INFO -   xgb_params: {'objective': 'multi:softprob', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.8, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.1, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 100, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.8, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+2024-12-15 03:38:45,060 - INFO - Cross-validation scores: [0.59289176 0.62520194 0.60679612 0.60841424 0.61165049]
+2024-12-15 03:38:45,060 - INFO - Mean CV score: 0.6090
+2024-12-15 03:38:45,170 - INFO - Negative Log-Loss: 0.8111
+2024-12-15 03:38:45,170 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       0.60      0.07      0.13        40
+          -1       0.66      0.64      0.65       395
+           0       0.64      0.74      0.69       634
+           1       0.66      0.51      0.57       257
+
+    accuracy                           0.65      1326
+   macro avg       0.64      0.49      0.51      1326
+weighted avg       0.65      0.65      0.64      1326
+
+2024-12-15 03:38:45,170 - INFO - Test Accuracy: 0.6463
+2024-12-15 05:24:47,511 - INFO - Starting training for xgboost model with classification task.
+2024-12-15 05:24:47,511 - INFO - Using 5-fold cross-validation.
+2024-12-15 05:24:47,511 - INFO - Model Hyperparameters:
+2024-12-15 05:24:47,511 - INFO -   task: classification
+2024-12-15 05:24:47,511 - INFO -   xgb_params: {'objective': 'multi:softprob', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.8, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.1, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 100, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.8, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+2024-12-15 05:24:48,568 - INFO - Cross-validation scores: [0.59289176 0.62520194 0.60679612 0.60841424 0.61165049]
+2024-12-15 05:24:48,568 - INFO - Mean CV score: 0.6090
+2024-12-15 05:24:48,691 - INFO - Negative Log-Loss: 0.8111
+2024-12-15 05:24:48,691 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.60      0.07      0.13        40
+           5       0.66      0.64      0.65       395
+           6       0.64      0.74      0.69       634
+           7       0.66      0.51      0.57       257
+
+    accuracy                           0.65      1326
+   macro avg       0.64      0.49      0.51      1326
+weighted avg       0.65      0.65      0.64      1326
+
+2024-12-15 05:24:48,691 - INFO - Test Accuracy: 0.6463

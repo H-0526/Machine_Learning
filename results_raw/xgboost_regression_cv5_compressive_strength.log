@@ -1,0 +1,17 @@
+2024-12-07 15:02:18,679 - INFO - Training xgboost model for regression task with 5-fold cross-validation.
+2024-12-07 15:02:18,679 - INFO - Model Hyperparameters:
+2024-12-07 15:02:18,679 - INFO -   task: regression
+2024-12-07 15:02:18,679 - INFO -   xgb_params: {'objective': 'reg:squarederror', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.8, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.1, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 100, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.8, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+2024-12-07 15:02:18,680 - INFO - Using manual cross-validation...
+2024-12-07 15:02:19,319 - INFO - Fold 1: MSE = 14.8876
+2024-12-07 15:02:19,347 - INFO - Fold 2: MSE = 29.5546
+2024-12-07 15:02:19,375 - INFO - Fold 3: MSE = 19.7912
+2024-12-07 15:02:19,407 - INFO - Fold 4: MSE = 19.5299
+2024-12-07 15:02:19,440 - INFO - Fold 5: MSE = 29.7712
+2024-12-07 15:02:19,440 - INFO - Cross-validation scores: [14.887554306990136, 29.554643727030665, 19.79122088365989, 19.5298587092864, 29.771171591304096]
+2024-12-07 15:02:19,440 - INFO - Mean CV score: 22.7069
+2024-12-07 15:02:19,440 - INFO - Fitting the model on the entire training set...
+2024-12-07 15:02:19,472 - INFO - Mean Squared Error: 21.5098
+2024-12-07 15:02:19,472 - INFO - Root Mean Squared Error (RMSE): 4.6379
+2024-12-07 15:02:19,472 - INFO - Mean Absolute Error (MAE): 3.1313
+2024-12-07 15:02:19,472 - INFO - R-squared (R^2): 0.9205

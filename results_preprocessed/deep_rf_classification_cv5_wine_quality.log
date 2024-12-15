@@ -1,0 +1,149 @@
+2024-12-15 03:43:54,184 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 03:43:54,184 - INFO - Using 5-fold cross-validation.
+2024-12-15 03:43:54,185 - INFO - Model Hyperparameters:
+2024-12-15 03:43:54,185 - INFO -   task: classification
+2024-12-15 03:43:54,185 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 03:43:54,185 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 03:43:59,887 - INFO - Cross-validation scores: [0.50726979 0.55250404 0.53398058 0.54530744 0.51779935]
+2024-12-15 03:43:59,887 - INFO - Mean CV score: 0.5314
+2024-12-15 03:44:01,186 - INFO - Negative Log-Loss: 5.7609
+2024-12-15 03:44:01,186 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       0.14      0.07      0.10        40
+          -1       0.52      0.56      0.54       395
+           0       0.61      0.60      0.61       634
+           1       0.45      0.46      0.46       257
+
+    accuracy                           0.54      1326
+   macro avg       0.43      0.42      0.42      1326
+weighted avg       0.54      0.54      0.54      1326
+
+2024-12-15 03:44:01,186 - INFO - Test Accuracy: 0.5445
+2024-12-15 05:21:09,938 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 05:21:09,938 - INFO - Using 5-fold cross-validation.
+2024-12-15 05:21:09,938 - INFO - Model Hyperparameters:
+2024-12-15 05:21:09,938 - INFO -   task: classification
+2024-12-15 05:21:09,938 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 05:21:09,938 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 05:21:15,812 - INFO - Cross-validation scores: [0.4911147  0.53473344 0.49352751 0.50809061 0.50647249]
+2024-12-15 05:21:15,812 - INFO - Mean CV score: 0.5068
+2024-12-15 05:21:17,159 - INFO - Negative Log-Loss: 6.2189
+2024-12-15 05:21:17,159 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.09      0.05      0.06        40
+           5       0.52      0.53      0.52       395
+           6       0.62      0.61      0.61       634
+           7       0.42      0.45      0.44       257
+
+    accuracy                           0.54      1326
+   macro avg       0.41      0.41      0.41      1326
+weighted avg       0.53      0.54      0.54      1326
+
+2024-12-15 05:21:17,159 - INFO - Test Accuracy: 0.5377
+2024-12-15 05:57:51,046 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 05:57:51,046 - INFO - Using 5-fold cross-validation.
+2024-12-15 05:57:51,046 - INFO - Model Hyperparameters:
+2024-12-15 05:57:51,046 - INFO -   task: classification
+2024-12-15 05:57:51,046 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 05:57:51,046 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:02:04,044 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:02:04,044 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:02:04,044 - INFO - Model Hyperparameters:
+2024-12-15 06:02:04,044 - INFO -   task: classification
+2024-12-15 06:02:04,044 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:02:04,044 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:05:31,470 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:05:31,470 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:05:31,470 - INFO - Model Hyperparameters:
+2024-12-15 06:05:31,470 - INFO -   task: classification
+2024-12-15 06:05:31,470 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:05:31,470 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:06:18,055 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:06:18,055 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:06:18,056 - INFO - Model Hyperparameters:
+2024-12-15 06:06:18,056 - INFO -   task: classification
+2024-12-15 06:06:18,056 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:06:18,056 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:07:35,102 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:07:35,102 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:07:35,102 - INFO - Model Hyperparameters:
+2024-12-15 06:07:35,102 - INFO -   task: classification
+2024-12-15 06:07:35,102 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:07:35,102 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:09:33,772 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:09:33,772 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:09:33,772 - INFO - Model Hyperparameters:
+2024-12-15 06:09:33,772 - INFO -   task: classification
+2024-12-15 06:09:33,772 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:09:33,774 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:09:33,782 - INFO - Applied SMOTE with sampling_strategy={4: 1000}. Resampled class distribution: [   0    0    0    0 1000  934 1461  618]
+2024-12-15 06:10:56,954 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:10:56,954 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:10:56,954 - INFO - Model Hyperparameters:
+2024-12-15 06:10:56,954 - INFO -   task: classification
+2024-12-15 06:10:56,954 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:10:56,954 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:10:56,957 - INFO - Applied SMOTE with sampling_strategy={4: 1000}. Resampled class distribution: [   0    0    0    0 1000  934 1461  618]
+2024-12-15 06:11:04,214 - INFO - Cross-validation scores: [0.42092154 0.43960149 0.41594022 0.45261845 0.41645885]
+2024-12-15 06:11:04,214 - INFO - Mean CV score: 0.4291
+2024-12-15 06:11:05,918 - INFO - Negative Log-Loss: 6.9233
+2024-12-15 06:11:05,918 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.06      0.35      0.10        40
+           5       0.53      0.45      0.49       395
+           6       0.64      0.54      0.59       634
+           7       0.50      0.42      0.46       257
+
+    accuracy                           0.49      1326
+   macro avg       0.43      0.44      0.41      1326
+weighted avg       0.56      0.49      0.52      1326
+
+2024-12-15 06:11:05,918 - INFO - Test Accuracy: 0.4864
+2024-12-15 06:14:02,797 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:14:02,797 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:14:02,797 - INFO - Model Hyperparameters:
+2024-12-15 06:14:02,797 - INFO -   task: classification
+2024-12-15 06:14:02,797 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:14:02,797 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:14:02,803 - INFO - Applied SMOTE with sampling_strategy={4: 1500, 7: 1500}. Resampled class distribution: [   0    0    0    0 1500  934 1461 1500]
+2024-12-15 06:14:11,774 - INFO - Cross-validation scores: [0.40778499 0.43373494 0.44856348 0.43095459 0.41612604]
+2024-12-15 06:14:11,774 - INFO - Mean CV score: 0.4274
+2024-12-15 06:14:13,968 - INFO - Negative Log-Loss: 7.5753
+2024-12-15 06:14:13,968 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.06      0.35      0.10        40
+           5       0.58      0.44      0.50       395
+           6       0.70      0.49      0.58       634
+           7       0.42      0.57      0.48       257
+
+    accuracy                           0.49      1326
+   macro avg       0.44      0.46      0.42      1326
+weighted avg       0.59      0.49      0.52      1326
+
+2024-12-15 06:14:13,968 - INFO - Test Accuracy: 0.4864
+2024-12-15 06:19:36,399 - INFO - Starting training for deep_rf model with classification task.
+2024-12-15 06:19:36,399 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:19:36,399 - INFO - Model Hyperparameters:
+2024-12-15 06:19:36,399 - INFO -   task: classification
+2024-12-15 06:19:36,399 - INFO -   random_forest_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:19:36,399 - INFO -   nn_params: {'hidden_layers': [64, 32, 16], 'dropout': 0.1, 'activation': 'ReLU'}
+2024-12-15 06:19:42,229 - INFO - Cross-validation scores: [0.52019386 0.49596123 0.52912621 0.52912621 0.53398058]
+2024-12-15 06:19:42,229 - INFO - Mean CV score: 0.5217
+2024-12-15 06:19:43,570 - INFO - Negative Log-Loss: 5.2188
+2024-12-15 06:19:43,570 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.18      0.12      0.15        40
+           5       0.53      0.53      0.53       395
+           6       0.62      0.63      0.62       634
+           7       0.48      0.46      0.47       257
+
+    accuracy                           0.56      1326
+   macro avg       0.45      0.44      0.44      1326
+weighted avg       0.55      0.56      0.55      1326
+
+2024-12-15 06:19:43,570 - INFO - Test Accuracy: 0.5551

@@ -1,0 +1,85 @@
+2024-12-15 03:37:30,297 - INFO - Starting training for gbdt model with classification task.
+2024-12-15 03:37:30,297 - INFO - Using 5-fold cross-validation.
+2024-12-15 03:37:30,297 - INFO - Model Hyperparameters:
+2024-12-15 03:37:30,297 - INFO -   task: classification
+2024-12-15 03:37:30,297 - INFO -   gbdt_params: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 42, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-12-15 03:37:34,412 - INFO - Cross-validation scores: [0.57512116 0.57996769 0.58252427 0.56957929 0.61326861]
+2024-12-15 03:37:34,412 - INFO - Mean CV score: 0.5841
+2024-12-15 03:37:35,400 - INFO - Negative Log-Loss: 0.8740
+2024-12-15 03:37:35,400 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       0.38      0.12      0.19        40
+          -1       0.65      0.57      0.61       395
+           0       0.59      0.75      0.66       634
+           1       0.58      0.37      0.45       257
+
+    accuracy                           0.60      1326
+   macro avg       0.55      0.45      0.48      1326
+weighted avg       0.60      0.60      0.59      1326
+
+2024-12-15 03:37:35,400 - INFO - Test Accuracy: 0.6041
+2024-12-15 05:22:46,540 - INFO - Starting training for gbdt model with classification task.
+2024-12-15 05:22:46,540 - INFO - Using 5-fold cross-validation.
+2024-12-15 05:22:46,540 - INFO - Model Hyperparameters:
+2024-12-15 05:22:46,540 - INFO -   task: classification
+2024-12-15 05:22:46,540 - INFO -   gbdt_params: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 42, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-12-15 05:22:50,685 - INFO - Cross-validation scores: [0.57512116 0.57996769 0.58252427 0.56957929 0.61326861]
+2024-12-15 05:22:50,685 - INFO - Mean CV score: 0.5841
+2024-12-15 05:22:51,679 - INFO - Negative Log-Loss: 0.8740
+2024-12-15 05:22:51,679 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.38      0.12      0.19        40
+           5       0.65      0.57      0.61       395
+           6       0.59      0.75      0.66       634
+           7       0.58      0.37      0.45       257
+
+    accuracy                           0.60      1326
+   macro avg       0.55      0.45      0.48      1326
+weighted avg       0.60      0.60      0.59      1326
+
+2024-12-15 05:22:51,679 - INFO - Test Accuracy: 0.6041
+2024-12-15 06:15:57,021 - INFO - Starting training for gbdt model with classification task.
+2024-12-15 06:15:57,022 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:15:57,022 - INFO - Model Hyperparameters:
+2024-12-15 06:15:57,022 - INFO -   task: classification
+2024-12-15 06:15:57,022 - INFO -   gbdt_params: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 42, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:15:57,029 - INFO - Applied SMOTE with sampling_strategy={4: 1500, 7: 1500}. Resampled class distribution: [   0    0    0    0 1500  934 1461 1500]
+2024-12-15 06:16:07,136 - INFO - Cross-validation scores: [0.6802595  0.70806302 0.68489342 0.69138091 0.69972196]
+2024-12-15 06:16:07,137 - INFO - Mean CV score: 0.6929
+2024-12-15 06:16:09,638 - INFO - Negative Log-Loss: 0.9940
+2024-12-15 06:16:09,638 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.15      0.50      0.23        40
+           5       0.68      0.47      0.56       395
+           6       0.62      0.55      0.59       634
+           7       0.45      0.63      0.52       257
+
+    accuracy                           0.54      1326
+   macro avg       0.48      0.54      0.47      1326
+weighted avg       0.59      0.54      0.55      1326
+
+2024-12-15 06:16:09,638 - INFO - Test Accuracy: 0.5407
+2024-12-15 06:18:33,235 - INFO - Starting training for gbdt model with classification task.
+2024-12-15 06:18:33,235 - INFO - Using 5-fold cross-validation.
+2024-12-15 06:18:33,235 - INFO - Model Hyperparameters:
+2024-12-15 06:18:33,235 - INFO -   task: classification
+2024-12-15 06:18:33,235 - INFO -   gbdt_params: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 42, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-12-15 06:18:37,362 - INFO - Cross-validation scores: [0.57512116 0.57996769 0.5776699  0.57119741 0.61326861]
+2024-12-15 06:18:37,363 - INFO - Mean CV score: 0.5834
+2024-12-15 06:18:38,357 - INFO - Negative Log-Loss: 0.8736
+2024-12-15 06:18:38,357 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       0.36      0.12      0.19        40
+           5       0.65      0.57      0.61       395
+           6       0.59      0.75      0.66       634
+           7       0.58      0.37      0.45       257
+
+    accuracy                           0.60      1326
+   macro avg       0.55      0.45      0.48      1326
+weighted avg       0.60      0.60      0.59      1326
+
+2024-12-15 06:18:38,357 - INFO - Test Accuracy: 0.6048

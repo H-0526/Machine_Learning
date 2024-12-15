@@ -1,0 +1,29 @@
+2024-12-06 23:28:05,854 - INFO - Starting training for Naive Bayes model: bernoulli classifier
+2024-12-06 23:28:05,854 - INFO - Model hyperparameters: {'alpha': 1.0, 'binarize': 0.5, 'fit_prior': True}
+2024-12-06 23:28:05,861 - INFO - Negative Log-Loss: 1.1888
+2024-12-06 23:28:05,865 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           3       1.00      0.00      0.00         9
+           4       1.00      0.00      0.00        69
+           5       0.47      0.58      0.52       613
+           6       0.49      0.44      0.46       894
+           7       0.33      0.42      0.37       315
+           8       1.00      0.00      0.00        49
+           9       1.00      0.00      0.00         1
+
+    accuracy                           0.45      1950
+   macro avg       0.76      0.20      0.19      1950
+weighted avg       0.49      0.45      0.43      1950
+
+2024-12-06 23:28:05,866 - INFO - Test Accuracy: 0.4492
+2024-12-06 23:28:05,866 - INFO - Class distribution:
+quality
+6    2836
+5    2138
+7    1079
+4     216
+8     193
+3      30
+9       5
+Name: count, dtype: int64

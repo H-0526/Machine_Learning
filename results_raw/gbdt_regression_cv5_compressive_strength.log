@@ -1,0 +1,17 @@
+2024-12-07 15:00:14,093 - INFO - Training gbdt model for regression task with 5-fold cross-validation.
+2024-12-07 15:00:14,094 - INFO - Model Hyperparameters:
+2024-12-07 15:00:14,094 - INFO -   task: regression
+2024-12-07 15:00:14,094 - INFO -   gbdt_params: {'alpha': 0.9, 'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'squared_error', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 42, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-12-07 15:00:14,095 - INFO - Using manual cross-validation...
+2024-12-07 15:00:14,164 - INFO - Fold 1: MSE = 18.8866
+2024-12-07 15:00:14,231 - INFO - Fold 2: MSE = 33.2164
+2024-12-07 15:00:14,299 - INFO - Fold 3: MSE = 30.3761
+2024-12-07 15:00:14,368 - INFO - Fold 4: MSE = 25.3513
+2024-12-07 15:00:14,436 - INFO - Fold 5: MSE = 34.3116
+2024-12-07 15:00:14,436 - INFO - Cross-validation scores: [18.886581202174444, 33.21637558592775, 30.37608314605474, 25.351295399840602, 34.31156344827522]
+2024-12-07 15:00:14,436 - INFO - Mean CV score: 28.4284
+2024-12-07 15:00:14,436 - INFO - Fitting the model on the entire training set...
+2024-12-07 15:00:14,514 - INFO - Mean Squared Error: 30.4793
+2024-12-07 15:00:14,514 - INFO - Root Mean Squared Error (RMSE): 5.5208
+2024-12-07 15:00:14,514 - INFO - Mean Absolute Error (MAE): 4.0663
+2024-12-07 15:00:14,514 - INFO - R-squared (R^2): 0.8874

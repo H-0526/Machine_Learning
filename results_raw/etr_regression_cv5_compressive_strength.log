@@ -1,0 +1,17 @@
+2024-12-07 14:59:49,452 - INFO - Training etr model for regression task with 5-fold cross-validation.
+2024-12-07 14:59:49,452 - INFO - Model Hyperparameters:
+2024-12-07 14:59:49,453 - INFO -   task: regression
+2024-12-07 14:59:49,453 - INFO -   extra_trees_params: {'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-07 14:59:49,453 - INFO - Using manual cross-validation...
+2024-12-07 14:59:49,553 - INFO - Fold 1: MSE = 19.6601
+2024-12-07 14:59:49,648 - INFO - Fold 2: MSE = 32.5047
+2024-12-07 14:59:49,743 - INFO - Fold 3: MSE = 25.1013
+2024-12-07 14:59:49,838 - INFO - Fold 4: MSE = 21.9080
+2024-12-07 14:59:49,933 - INFO - Fold 5: MSE = 29.6795
+2024-12-07 14:59:49,933 - INFO - Cross-validation scores: [19.660058824473822, 32.504739259420774, 25.10133350282085, 21.907999379755058, 29.679504055615237]
+2024-12-07 14:59:49,933 - INFO - Mean CV score: 25.7707
+2024-12-07 14:59:49,933 - INFO - Fitting the model on the entire training set...
+2024-12-07 14:59:50,047 - INFO - Mean Squared Error: 27.7675
+2024-12-07 14:59:50,047 - INFO - Root Mean Squared Error (RMSE): 5.2695
+2024-12-07 14:59:50,047 - INFO - Mean Absolute Error (MAE): 3.4165
+2024-12-07 14:59:50,047 - INFO - R-squared (R^2): 0.8974

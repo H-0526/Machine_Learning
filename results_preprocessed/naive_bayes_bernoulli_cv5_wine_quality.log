@@ -1,0 +1,61 @@
+2024-12-15 03:49:34,908 - INFO - Starting training for Naive Bayes model: bernoulli classifier
+2024-12-15 03:49:34,908 - INFO - Model hyperparameters: {'alpha': 1.0, 'binarize': 0.5, 'fit_prior': True}
+2024-12-15 03:49:34,916 - INFO - Negative Log-Loss: 1.0528
+2024-12-15 03:49:34,919 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       1.00      0.00      0.00        40
+          -1       0.50      0.51      0.50       395
+           0       0.50      0.53      0.52       634
+           1       0.39      0.37      0.38       257
+
+    accuracy                           0.48      1326
+   macro avg       0.60      0.35      0.35      1326
+weighted avg       0.49      0.48      0.47      1326
+
+2024-12-15 03:49:34,920 - INFO - Test Accuracy: 0.4789
+2024-12-15 03:49:34,920 - INFO - Class distribution:
+quality
+ 0    2095
+-1    1329
+ 1     875
+-2     119
+Name: count, dtype: int64
+2024-12-15 05:27:04,472 - INFO - Starting training for Naive Bayes model: bernoulli classifier
+2024-12-15 05:27:04,472 - INFO - Model hyperparameters: {'alpha': 1.0, 'binarize': 0.5, 'fit_prior': True}
+2024-12-15 05:27:04,479 - INFO - Negative Log-Loss: 1.0528
+2024-12-15 05:27:04,482 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       1.00      0.00      0.00        40
+           5       0.50      0.51      0.50       395
+           6       0.50      0.53      0.52       634
+           7       0.39      0.37      0.38       257
+
+    accuracy                           0.48      1326
+   macro avg       0.60      0.35      0.35      1326
+weighted avg       0.49      0.48      0.47      1326
+
+2024-12-15 05:27:04,483 - INFO - Test Accuracy: 0.4789
+2024-12-15 05:30:46,064 - INFO - Starting training for Naive Bayes model: bernoulli classifier
+2024-12-15 05:30:46,064 - INFO - Model hyperparameters: {'alpha': 1.0, 'binarize': 0.5, 'fit_prior': True}
+2024-12-15 05:30:46,072 - INFO - Negative Log-Loss: 1.0528
+2024-12-15 05:30:46,074 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       1.00      0.00      0.00        40
+           5       0.50      0.51      0.50       395
+           6       0.50      0.53      0.52       634
+           7       0.39      0.37      0.38       257
+
+    accuracy                           0.48      1326
+   macro avg       0.60      0.35      0.35      1326
+weighted avg       0.49      0.48      0.47      1326
+
+2024-12-15 05:30:46,075 - INFO - Test Accuracy: 0.4789
+2024-12-15 05:30:46,076 - INFO - Class distribution:
+6    2095
+5    1329
+7     875
+4     119
+Name: count, dtype: int64

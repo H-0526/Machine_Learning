@@ -1,0 +1,29 @@
+2024-12-06 23:27:15,347 - INFO - Starting training for Naive Bayes model: gaussian classifier
+2024-12-06 23:27:15,347 - INFO - Model hyperparameters: {'priors': None, 'var_smoothing': 1e-07}
+2024-12-06 23:27:15,352 - INFO - Negative Log-Loss: 1.4509
+2024-12-06 23:27:15,356 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           3       0.14      0.33      0.19         9
+           4       0.14      0.13      0.13        69
+           5       0.51      0.61      0.56       613
+           6       0.54      0.39      0.45       894
+           7       0.36      0.54      0.43       315
+           8       0.45      0.10      0.17        49
+           9       0.00      0.00      0.00         1
+
+    accuracy                           0.47      1950
+   macro avg       0.30      0.30      0.28      1950
+weighted avg       0.48      0.47      0.46      1950
+
+2024-12-06 23:27:15,357 - INFO - Test Accuracy: 0.4651
+2024-12-06 23:27:15,361 - INFO - Class distribution:
+quality
+6    2836
+5    2138
+7    1079
+4     216
+8     193
+3      30
+9       5
+Name: count, dtype: int64

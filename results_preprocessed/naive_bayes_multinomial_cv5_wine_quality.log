@@ -1,0 +1,45 @@
+2024-12-15 03:49:49,112 - INFO - Starting training for Naive Bayes model: multinomial classifier
+2024-12-15 03:49:49,112 - INFO - Model hyperparameters: {'alpha': 1.0, 'fit_prior': True}
+2024-12-15 03:49:49,117 - INFO - Negative Log-Loss: 1.0980
+2024-12-15 03:49:49,122 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+          -2       1.00      0.00      0.00        40
+          -1       1.00      0.00      0.00       395
+           0       0.48      1.00      0.65       634
+           1       1.00      0.00      0.00       257
+
+    accuracy                           0.48      1326
+   macro avg       0.87      0.25      0.16      1326
+weighted avg       0.75      0.48      0.31      1326
+
+2024-12-15 03:49:49,122 - INFO - Test Accuracy: 0.4781
+2024-12-15 03:49:49,123 - INFO - Class distribution:
+quality
+ 0    2095
+-1    1329
+ 1     875
+-2     119
+Name: count, dtype: int64
+2024-12-15 05:31:01,443 - INFO - Starting training for Naive Bayes model: multinomial classifier
+2024-12-15 05:31:01,443 - INFO - Model hyperparameters: {'alpha': 1.0, 'fit_prior': True}
+2024-12-15 05:31:01,449 - INFO - Negative Log-Loss: 1.0980
+2024-12-15 05:31:01,452 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           4       1.00      0.00      0.00        40
+           5       1.00      0.00      0.00       395
+           6       0.48      1.00      0.65       634
+           7       1.00      0.00      0.00       257
+
+    accuracy                           0.48      1326
+   macro avg       0.87      0.25      0.16      1326
+weighted avg       0.75      0.48      0.31      1326
+
+2024-12-15 05:31:01,452 - INFO - Test Accuracy: 0.4781
+2024-12-15 05:31:01,453 - INFO - Class distribution:
+6    2095
+5    1329
+7     875
+4     119
+Name: count, dtype: int64
