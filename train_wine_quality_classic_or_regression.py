@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import logging
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
-from sklearn.metrics import classification_report, accuracy_score, log_loss, mean_squared_error, mean_absolute_error, r2_score
+from sklearn.metrics import classification_report, accuracy_score, log_loss, mean_squared_error, mean_absolute_error, r2_score, confusion_matrix
 from classic_or_regression_models import find_model_using_name  # 导入find_model_using_name函数
 from classic_or_regression_models.DeepRF import DeepRFModel  # 导入 DeepRFModel
 from imblearn.over_sampling import SMOTE  # 导入 SMOTE
@@ -22,7 +22,7 @@ def set_seed(seed=42):
 
 # 命令行参数解析
 parser = argparse.ArgumentParser(description="Train wine quality classification or regression models.")
-parser.add_argument('--model', type=str, default='deep_rf',
+parser.add_argument('--model', type=str, default='xgboost',
                     choices=['deep_rf', 'etr', 'gbdt', 'lightgbm', 'rf', 'svm', 'xgboost'],
                     help="Model to use for training.")
 parser.add_argument('--task', type=str, default='classification', choices=['classification', 'regression'],
@@ -76,6 +76,20 @@ def create_logger(model_name, task, cv_folds):
 
     return logger
 
+def tolerance_accuracy(y_true, y_pred, tolerance=1):
+    """
+    计算容差分类准确率。
+    T=1.0 相当于为多分类任务设置了一个“±1”范围的误差容忍度
+    :param y_true: 实际类别。
+    :param y_pred: 预测类别。
+    :param tolerance: 容差范围。
+    :return: 容差准确率。
+    """
+    correct = 0
+    for true, pred in zip(y_true, y_pred):
+        if abs(true - pred) <= tolerance:
+            correct += 1
+    return correct / len(y_true)
 
 # 手动交叉验证函数
 def manual_cross_val_score(model, X, y, cv_folds=5, scoring='accuracy', task='classification'):
@@ -178,17 +192,23 @@ def main():
     model.fit(X_train, y_train)
 
     if args.task == 'classification':
+        y_pred = model.predict(X_test)
         y_pred_proba = model.predict_proba(X_test)
         loss = log_loss(y_test, y_pred_proba)
         class_report = classification_report(y_test, model.predict(X_test), zero_division=1)
-        test_accuracy = accuracy_score(y_test, model.predict(X_test))
+        test_accuracy = accuracy_score(y_test, y_pred)
+
+        # 计算容差分类准确率
+        tolerance_acc_10 = tolerance_accuracy(y_test, y_pred, tolerance=1.0)
 
         logger.info(f"Negative Log-Loss: {loss:.4f}")
         logger.info(f"Classification Report:\n{class_report}")
         logger.info(f"Test Accuracy: {test_accuracy:.4f}")
+        logger.info(f"Tolerance Accuracy (T=1.0): {tolerance_acc_10:.4f}")
 
         print(f"Test Accuracy: {test_accuracy:.4f}")
         print(f"Negative Log-Loss: {loss:.4f}")
+        print(f"Tolerance Accuracy (T=1.0): {tolerance_acc_10:.4f}")
         print(f"Classification Report:\n{class_report}")
     else:
         y_pred = model.predict(X_test)

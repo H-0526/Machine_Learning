@@ -1,0 +1,14 @@
+2024-12-20 04:24:57,916 - INFO - NumExpr defaulting to 16 threads.
+2024-12-20 04:24:58,417 - INFO - 开始运行: process_concrete_data
+2024-12-20 04:24:58,448 - INFO - 完成运行: process_concrete_data
+2024-12-20 04:24:58,448 - INFO - 开始运行: process_combined_wine_data
+2024-12-20 04:24:58,477 - INFO - 完成运行: process_combined_wine_data
+2024-12-20 04:24:58,477 - INFO - 开始运行: process_dataset
+2024-12-20 04:24:58,491 - INFO - 完成运行: process_dataset
+2024-12-20 04:24:58,491 - INFO - 开始运行: process_dataset
+2024-12-20 04:24:58,512 - INFO - 完成运行: process_dataset
+2024-12-20 04:24:58,512 - INFO - 开始运行: standardize_data
+2024-12-20 04:24:58,526 - INFO - 完成运行: standardize_data
+2024-12-20 04:24:58,527 - INFO - 开始运行: standardize_data
+2024-12-20 04:24:58,560 - INFO - 完成运行: standardize_data
+2024-12-20 04:24:58,560 - INFO - 所有数据预处理步骤已完成！

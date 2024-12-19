@@ -55,6 +55,8 @@ def process_wine_data():
 
     print("处理红葡萄酒数据集异常值...")
     for column in red_df.columns:
+        if column == "quality":  # 跳过 quality 列
+            continue  # 保留 quality 列的所有数据，不移除异常值
         before_count = len(red_df)
         red_df = remove_outliers_iqr(red_df, column)
         after_count = len(red_df)
@@ -62,6 +64,8 @@ def process_wine_data():
 
     print("处理白葡萄酒数据集异常值...")
     for column in white_df.columns:
+        if column == "quality":  # 跳过 quality 列
+            continue  # 保留 quality 列的所有数据，不移除异常值
         before_count = len(white_df)
         white_df = remove_outliers_iqr(white_df, column)
         after_count = len(white_df)
@@ -91,6 +95,8 @@ def process_combined_wine_data():
 
     print("处理红白葡萄酒组合数据集异常值...")
     for column in combined_df.columns:
+        if column == "quality":  # 跳过 quality 列
+            continue  # 保留 quality 列的所有数据，不移除异常值
         before_count = len(combined_df)
         combined_df = remove_outliers_iqr(combined_df, column)
         after_count = len(combined_df)

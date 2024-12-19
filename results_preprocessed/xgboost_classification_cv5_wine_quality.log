@@ -40,3 +40,28 @@ weighted avg       0.65      0.65      0.64      1326
 weighted avg       0.65      0.65      0.64      1326
 
 2024-12-15 05:24:48,691 - INFO - Test Accuracy: 0.6463
+2024-12-20 04:31:01,967 - INFO - Starting training for xgboost model with classification task.
+2024-12-20 04:31:01,968 - INFO - Using 5-fold cross-validation.
+2024-12-20 04:31:01,968 - INFO - Model Hyperparameters:
+2024-12-20 04:31:01,968 - INFO -   task: classification
+2024-12-20 04:31:01,968 - INFO -   xgb_params: {'objective': 'multi:softprob', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.8, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.1, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 100, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.8, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+2024-12-20 04:31:03,559 - INFO - Cross-validation scores: [0.58540373 0.61180124 0.59564541 0.62674961 0.62986003]
+2024-12-20 04:31:03,559 - INFO - Mean CV score: 0.6099
+2024-12-20 04:31:03,726 - INFO - Negative Log-Loss: 0.9752
+2024-12-20 04:31:03,726 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           2       1.00      0.00      0.00         4
+           3       0.33      0.03      0.05        38
+           5       0.64      0.60      0.62       419
+           6       0.59      0.74      0.66       625
+           7       0.63      0.48      0.55       251
+           8       0.77      0.25      0.38        40
+           9       1.00      0.00      0.00         2
+
+    accuracy                           0.61      1379
+   macro avg       0.71      0.30      0.32      1379
+weighted avg       0.61      0.61      0.60      1379
+
+2024-12-20 04:31:03,726 - INFO - Test Accuracy: 0.6128
+2024-12-20 04:31:03,726 - INFO - Tolerance Accuracy (T=1.0): 0.9442

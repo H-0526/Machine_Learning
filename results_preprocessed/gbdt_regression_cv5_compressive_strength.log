@@ -15,3 +15,20 @@
 2024-12-15 02:50:18,494 - INFO - Root Mean Squared Error (RMSE): 0.3478
 2024-12-15 02:50:18,494 - INFO - Mean Absolute Error (MAE): 0.2537
 2024-12-15 02:50:18,494 - INFO - R-squared (R^2): 0.8923
+2024-12-17 18:37:16,839 - INFO - Training gbdt model for regression task with 5-fold cross-validation.
+2024-12-17 18:37:16,839 - INFO - Model Hyperparameters:
+2024-12-17 18:37:16,839 - INFO -   task: regression
+2024-12-17 18:37:16,839 - INFO -   gbdt_params: {'alpha': 0.9, 'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'squared_error', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 42, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-12-17 18:37:16,839 - INFO - Using manual cross-validation...
+2024-12-17 18:37:16,914 - INFO - Fold 1: MSE = 0.1056
+2024-12-17 18:37:16,983 - INFO - Fold 2: MSE = 0.1254
+2024-12-17 18:37:17,051 - INFO - Fold 3: MSE = 0.0799
+2024-12-17 18:37:17,118 - INFO - Fold 4: MSE = 0.0867
+2024-12-17 18:37:17,186 - INFO - Fold 5: MSE = 0.0929
+2024-12-17 18:37:17,186 - INFO - Cross-validation scores: [0.10562500524720195, 0.1254353394197606, 0.07987647432226642, 0.08669853832833407, 0.0928586026844383]
+2024-12-17 18:37:17,186 - INFO - Mean CV score: 0.0981
+2024-12-17 18:37:17,186 - INFO - Fitting the model on the entire training set...
+2024-12-17 18:37:17,266 - INFO - Mean Squared Error: 0.1210
+2024-12-17 18:37:17,266 - INFO - Root Mean Squared Error (RMSE): 0.3478
+2024-12-17 18:37:17,266 - INFO - Mean Absolute Error (MAE): 0.2537
+2024-12-17 18:37:17,266 - INFO - R-squared (R^2): 0.8923

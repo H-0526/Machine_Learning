@@ -62,3 +62,33 @@ weighted avg       0.54      0.41      0.42      1326
 7     875
 4     119
 Name: count, dtype: int64
+2024-12-20 04:34:58,609 - INFO - Starting training for model: logistic_regression
+2024-12-20 04:34:58,724 - INFO - Cross-validation scores: [0.26552795 0.2515528  0.26905132 0.25194401 0.26283048]
+2024-12-20 04:34:58,724 - INFO - Mean CV accuracy: 0.2602
+2024-12-20 04:34:58,745 - INFO - Negative Log-Loss: 1.7219
+2024-12-20 04:34:58,749 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           2       0.00      0.00      0.00         4
+           3       0.07      0.47      0.12        38
+           5       0.49      0.37      0.42       419
+           6       0.66      0.14      0.23       625
+           7       0.31      0.24      0.27       251
+           8       0.09      0.47      0.15        40
+           9       0.00      0.00      0.00         2
+
+    accuracy                           0.25      1379
+   macro avg       0.23      0.24      0.17      1379
+weighted avg       0.51      0.25      0.29      1379
+
+2024-12-20 04:34:58,751 - INFO - Test Accuracy: 0.2473
+2024-12-20 04:34:58,751 - INFO - Tolerance Accuracy (T=1.0): 0.5272
+2024-12-20 04:34:58,754 - INFO - Class distribution:
+6    2095
+5    1329
+7     875
+8     162
+3     119
+2      11
+9       5
+Name: count, dtype: int64

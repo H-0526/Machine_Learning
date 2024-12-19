@@ -40,3 +40,28 @@ weighted avg       0.68      0.68      0.67      1326
 weighted avg       0.68      0.68      0.67      1326
 
 2024-12-15 05:24:08,171 - INFO - Test Accuracy: 0.6787
+2024-12-20 04:30:20,795 - INFO - Starting training for rf model with classification task.
+2024-12-20 04:30:20,795 - INFO - Using 5-fold cross-validation.
+2024-12-20 04:30:20,795 - INFO - Model Hyperparameters:
+2024-12-20 04:30:20,795 - INFO -   task: classification
+2024-12-20 04:30:20,795 - INFO -   rf_params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+2024-12-20 04:30:22,163 - INFO - Cross-validation scores: [0.64906832 0.6242236  0.62986003 0.63297045 0.67807154]
+2024-12-20 04:30:22,163 - INFO - Mean CV score: 0.6428
+2024-12-20 04:30:22,527 - INFO - Negative Log-Loss: 1.0268
+2024-12-20 04:30:22,527 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           2       1.00      0.00      0.00         4
+           3       0.86      0.16      0.27        38
+           5       0.69      0.64      0.66       419
+           6       0.63      0.78      0.70       625
+           7       0.70      0.53      0.60       251
+           8       0.67      0.30      0.41        40
+           9       1.00      0.00      0.00         2
+
+    accuracy                           0.66      1379
+   macro avg       0.79      0.34      0.38      1379
+weighted avg       0.67      0.66      0.65      1379
+
+2024-12-20 04:30:22,528 - INFO - Test Accuracy: 0.6599
+2024-12-20 04:30:22,528 - INFO - Tolerance Accuracy (T=1.0): 0.9463

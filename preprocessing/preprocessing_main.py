@@ -88,7 +88,9 @@ if __name__ == "__main__":
         for dataset in standardized_datasets:
             input_path = os.path.join(PROCESSED_DATA_PATH, dataset["input_file"])
             output_path = os.path.join(PROCESSED_DATA_PATH, dataset["output_file"])
-            log_and_run(standardize_data, input_path, output_path)
+            scaler_path = os.path.join(PROCESSED_DATA_PATH, "scalers")  # 设置 scaler 保存路径
+            os.makedirs(scaler_path, exist_ok=True)  # 确保路径存在
+            log_and_run(standardize_data, input_path, output_path, scaler_path)
 
         logging.info("所有数据预处理步骤已完成！")
 

@@ -70,6 +70,21 @@ def create_logger(model_name, cv_folds):
 
     return logger
 
+def tolerance_accuracy(y_true, y_pred, tolerance=1):
+    """
+    计算容差分类准确率。
+    T=1.0 相当于为多分类任务设置了一个“±1”范围的误差容忍度
+    :param y_true: 实际类别。
+    :param y_pred: 预测类别。
+    :param tolerance: 容差范围。
+    :return: 容差准确率。
+    """
+    correct = 0
+    for true, pred in zip(y_true, y_pred):
+        if abs(true - pred) <= tolerance:
+            correct += 1
+    return correct / len(y_true)
+
 # 主函数
 def main():
     X, y = load_data()
@@ -117,7 +132,11 @@ def main():
 
     # 记录测试集准确率
     test_accuracy = accuracy_score(y_test, model.predict(X_test))
+    # 计算容差分类准确率
+    tolerance_acc_10 = tolerance_accuracy(y_test, model.predict(X_test), tolerance=1.0)
+
     logger.info(f"Test Accuracy: {test_accuracy:.4f}")
+    logger.info(f"Tolerance Accuracy (T=1.0): {tolerance_acc_10:.4f}")
 
     # 记录类别分布
     logger.info(f"Class distribution:\n{pd.Series(y).value_counts()}")
@@ -125,6 +144,7 @@ def main():
     # 打印到控制台
     print(f"Test Accuracy: {test_accuracy:.4f}")
     print(f"Negative Log-Loss: {loss:.4f}")
+    print(f"Tolerance Accuracy (T=1.0): {tolerance_acc_10:.4f}")
     print(f"Classification Report:\n{class_report}")
 
 if __name__ == "__main__":

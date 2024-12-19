@@ -15,3 +15,20 @@
 2024-12-15 02:50:33,367 - INFO - Root Mean Squared Error (RMSE): 0.2952
 2024-12-15 02:50:33,367 - INFO - Mean Absolute Error (MAE): 0.2071
 2024-12-15 02:50:33,367 - INFO - R-squared (R^2): 0.9225
+2024-12-17 18:37:48,136 - INFO - Training lightgbm model for regression task with 5-fold cross-validation.
+2024-12-17 18:37:48,136 - INFO - Model Hyperparameters:
+2024-12-17 18:37:48,136 - INFO -   task: regression
+2024-12-17 18:37:48,136 - INFO -   lgbm_params: {'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 0.8, 'importance_type': 'split', 'learning_rate': 0.1, 'max_depth': -1, 'min_child_samples': 20, 'min_child_weight': 0.001, 'min_split_gain': 0.0, 'n_estimators': 100, 'n_jobs': None, 'num_leaves': 31, 'objective': None, 'random_state': 42, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.8, 'subsample_for_bin': 200000, 'subsample_freq': 0}
+2024-12-17 18:37:48,136 - INFO - Using manual cross-validation...
+2024-12-17 18:37:48,266 - INFO - Fold 1: MSE = 0.0835
+2024-12-17 18:37:48,283 - INFO - Fold 2: MSE = 0.1000
+2024-12-17 18:37:48,300 - INFO - Fold 3: MSE = 0.0616
+2024-12-17 18:37:48,317 - INFO - Fold 4: MSE = 0.0808
+2024-12-17 18:37:48,335 - INFO - Fold 5: MSE = 0.0919
+2024-12-17 18:37:48,335 - INFO - Cross-validation scores: [0.0834938792063542, 0.09998987484286818, 0.06161128876869244, 0.08078745675378624, 0.09193204640394444]
+2024-12-17 18:37:48,336 - INFO - Mean CV score: 0.0836
+2024-12-17 18:37:48,336 - INFO - Fitting the model on the entire training set...
+2024-12-17 18:37:48,358 - INFO - Mean Squared Error: 0.0871
+2024-12-17 18:37:48,358 - INFO - Root Mean Squared Error (RMSE): 0.2952
+2024-12-17 18:37:48,358 - INFO - Mean Absolute Error (MAE): 0.2071
+2024-12-17 18:37:48,358 - INFO - R-squared (R^2): 0.9225

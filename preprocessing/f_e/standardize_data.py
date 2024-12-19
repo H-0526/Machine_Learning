@@ -13,8 +13,8 @@ STANDARDIZED_WINE_FILE = os.path.join(BASE_DIR, "standardized_selected_features_
 STANDARDIZED_CONCRETE_FILE = os.path.join(BASE_DIR, "standardized_selected_features_data_concrete.csv")
 
 # 保存 scaler 的路径
-SCALER_PATH = os.path.join(BASE_DIR, "scalers")
-os.makedirs(SCALER_PATH, exist_ok=True)
+SCALER_BASE_PATH = r"G:\Pycharm\Machine_Learning\data\processed_data\scalers"
+os.makedirs(SCALER_BASE_PATH, exist_ok=True)
 
 def standardize_data(input_path, output_path, scaler_path):
     """
@@ -62,8 +62,8 @@ def standardize_data(input_path, output_path, scaler_path):
 if __name__ == "__main__":
     # 对两个数据集进行标准化
     try:
-        standardize_data(COMBINED_WINE_FILE, STANDARDIZED_WINE_FILE, SCALER_PATH)
-        standardize_data(CONCRETE_FILE, STANDARDIZED_CONCRETE_FILE, SCALER_PATH)
+        standardize_data(COMBINED_WINE_FILE, STANDARDIZED_WINE_FILE, SCALER_BASE_PATH)
+        standardize_data(CONCRETE_FILE, STANDARDIZED_CONCRETE_FILE, SCALER_BASE_PATH)
         print("所有数据集已成功完成标准化处理！")
     except Exception as e:
         print(f"数据处理时发生错误: {e}")

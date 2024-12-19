@@ -43,3 +43,32 @@ weighted avg       0.54      0.52      0.51      1326
 7     875
 4     119
 Name: count, dtype: int64
+2024-12-20 04:38:00,470 - INFO - Starting training for Naive Bayes model: gaussian classifier
+2024-12-20 04:38:00,471 - INFO - Model hyperparameters: {'priors': None, 'var_smoothing': 1e-07}
+2024-12-20 04:38:00,475 - INFO - Negative Log-Loss: 1.2991
+2024-12-20 04:38:00,479 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           2       0.00      0.00      0.00         4
+           3       0.25      0.03      0.05        38
+           5       0.50      0.63      0.56       419
+           6       0.52      0.45      0.48       625
+           7       0.40      0.45      0.42       251
+           8       0.00      0.00      0.00        40
+           9       0.00      0.00      0.00         2
+
+    accuracy                           0.48      1379
+   macro avg       0.24      0.22      0.22      1379
+weighted avg       0.46      0.48      0.47      1379
+
+2024-12-20 04:38:00,481 - INFO - Test Accuracy: 0.4801
+2024-12-20 04:38:00,481 - INFO - Tolerance Accuracy (T=1.0): 0.9137
+2024-12-20 04:38:00,481 - INFO - Class distribution:
+6    2095
+5    1329
+7     875
+8     162
+3     119
+2      11
+9       5
+Name: count, dtype: int64
