@@ -72,3 +72,46 @@ weighted avg       0.46      0.48      0.47      1379
 2      11
 9       5
 Name: count, dtype: int64
+2024-12-21 02:19:47,306 - INFO - Starting training for Naive Bayes model: gaussian classifier
+2024-12-21 02:19:47,307 - INFO - Model hyperparameters: {'priors': None, 'var_smoothing': 1e-07}
+2024-12-21 02:39:40,466 - INFO - Starting training for Naive Bayes model: gaussian classifier
+2024-12-21 02:39:40,466 - INFO - Model hyperparameters: {'priors': None, 'var_smoothing': 1e-07}
+2024-12-21 02:39:40,469 - INFO - Starting 5-fold manual cross-validation.
+2024-12-21 02:39:40,470 - INFO - Processing fold 1
+2024-12-21 02:39:40,472 - INFO - Fold 1 Accuracy: 0.4581
+2024-12-21 02:39:40,472 - INFO - Processing fold 2
+2024-12-21 02:39:40,474 - INFO - Fold 2 Accuracy: 0.5031
+2024-12-21 02:39:40,474 - INFO - Processing fold 3
+2024-12-21 02:39:40,476 - INFO - Fold 3 Accuracy: 0.4837
+2024-12-21 02:39:40,476 - INFO - Processing fold 4
+2024-12-21 02:39:40,478 - INFO - Fold 4 Accuracy: 0.4603
+2024-12-21 02:39:40,478 - INFO - Processing fold 5
+2024-12-21 02:39:40,479 - INFO - Fold 5 Accuracy: 0.4868
+2024-12-21 02:39:40,479 - INFO - Manual Cross-validation Mean Accuracy: 0.4784
+2024-12-21 02:39:40,480 - INFO - Negative Log-Loss: 1.2991
+2024-12-21 02:39:40,484 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           2       0.00      0.00      0.00         4
+           3       0.25      0.03      0.05        38
+           5       0.50      0.63      0.56       419
+           6       0.52      0.45      0.48       625
+           7       0.40      0.45      0.42       251
+           8       0.00      0.00      0.00        40
+           9       0.00      0.00      0.00         2
+
+    accuracy                           0.48      1379
+   macro avg       0.24      0.22      0.22      1379
+weighted avg       0.46      0.48      0.47      1379
+
+2024-12-21 02:39:40,485 - INFO - Test Accuracy: 0.4801
+2024-12-21 02:39:40,485 - INFO - Tolerance Accuracy (T=1.0): 0.9137
+2024-12-21 02:39:40,485 - INFO - Class distribution:
+6    2095
+5    1329
+7     875
+8     162
+3     119
+2      11
+9       5
+Name: count, dtype: int64

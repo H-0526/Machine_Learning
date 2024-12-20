@@ -79,3 +79,18 @@ class NaiveBayesModel(BaseEstimator, ClassifierMixin):
         if self.model is None:
             raise ValueError("Model has not been set. Use set_model_type() to initialize the model.")
         return self.model.score(X, y)
+
+    def get_params(self, deep=True):
+        """
+        获取模型参数，兼容 Scikit-learn API。
+        """
+        return {"model_type": self.model_type}
+
+    def set_params(self, **params):
+        """
+        设置模型参数，兼容 Scikit-learn API。
+        """
+        if "model_type" in params:
+            self.set_model_type(params["model_type"])
+        return self
+

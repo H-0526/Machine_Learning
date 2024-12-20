@@ -12,7 +12,7 @@ def find_model_using_name(model_name):
     """
     if model_name == "naive_bayes":
         # 返回 NaiveBayesModel 的实例
-        return NaiveBayesModel(model_type="multinomial")  # 默认选择 MultinomialNB
+        return NaiveBayesModel(model_type="bernoulli")  # 默认选择 MultinomialNB
     elif model_name in models:
         # 实例化并返回对应的模型
         return models[model_name]()

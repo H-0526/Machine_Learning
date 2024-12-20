@@ -10,7 +10,6 @@ from sklearn.model_selection import train_test_split, cross_val_score, Stratifie
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.metrics import classification_report, accuracy_score, log_loss
 from classic_models.Naive_Bayes import NaiveBayesModel  # 导入 NaiveBayesModel 类
-from utils.lr_methods import warmup  # 导入warmup学习率调整方法
 
 # 设置随机种子函数
 def set_seed(seed=42):
@@ -97,6 +96,9 @@ def main():
     model = NaiveBayesModel()
     model.set_model_type(args.model_type)
 
+    # 验证模型是否初始化成功
+    assert model.model is not None, "Model has not been initialized. Check set_model_type."
+
     # 创建日志记录器
     logger = create_logger(args.model, args.model_type, args.cv_folds)
 
@@ -119,6 +121,40 @@ def main():
         X_train = scaler.fit_transform(X_train)
         X_test = scaler.transform(X_test)
 
+    # 五折交叉验证
+    logger.info(f"Starting {args.cv_folds}-fold manual cross-validation.")
+    cv = StratifiedKFold(n_splits=args.cv_folds, shuffle=True, random_state=args.seed)
+    fold_accuracies = []
+
+    for fold, (train_idx, val_idx) in enumerate(cv.split(X_train, y_train), 1):
+        logger.info(f"Processing fold {fold}")
+
+        # 获取训练集和验证集
+        X_fold_train, X_fold_val = X_train[train_idx], X_train[val_idx]
+        y_fold_train, y_fold_val = y_train[train_idx], y_train[val_idx]
+
+        # 根据模型类型选择合适的预处理方法
+        if args.model_type == "multinomial":
+            scaler = MinMaxScaler()
+        else:
+            scaler = StandardScaler()
+
+        X_fold_train = scaler.fit_transform(X_fold_train)
+        X_fold_val = scaler.transform(X_fold_val)
+
+        # 训练模型
+        model.fit(X_fold_train, y_fold_train)
+
+        # 验证模型
+        y_fold_pred = model.predict(X_fold_val)
+        fold_accuracy = accuracy_score(y_fold_val, y_fold_pred)
+        fold_accuracies.append(fold_accuracy)
+
+        logger.info(f"Fold {fold} Accuracy: {fold_accuracy:.4f}")
+
+    mean_accuracy = np.mean(fold_accuracies)
+    logger.info(f"Manual Cross-validation Mean Accuracy: {mean_accuracy:.4f}")
+
     # 训练模型
     model.fit(X_train, y_train)
 
@@ -136,7 +172,7 @@ def main():
     # 记录测试集准确率
     test_accuracy = accuracy_score(y_test, model.predict(X_test))
     # 计算容差分类准确率
-    tolerance_acc_10 = tolerance_accuracy(y_test, model.predict(X_test), tolerance=1.0)
+    tolerance_acc_10 = tolerance_accuracy(y_test, model.predict(X_test), tolerance= 1)
 
     logger.info(f"Test Accuracy: {test_accuracy:.4f}")
     logger.info(f"Tolerance Accuracy (T=1.0): {tolerance_acc_10:.4f}")
